@@ -1,60 +1,64 @@
-﻿# SeleniumFrameworkDemo
-# Selenium Java Automation Framework (Page Object Model)
+﻿# 🚀 Selenium Java Test Automation Framework (POM)
 
-A robust and scalable Test Automation Framework built using **Java**, **Selenium WebDriver**, **TestNG**, and **Maven** following the **Page Object Model (POM)** design pattern. This project automates core e-commerce functionalities on the SauceDemo web application.
+A robust and scalable Test Automation Framework built using **Java**, **Selenium WebDriver**, **TestNG**, and **Maven**, following the **Page Object Model (POM)** design pattern. This project automates core e-commerce functionalities on the SauceDemo web application.
 
 ---
 
-## 🚀 Tech Stack & Tools
+## 🛠️ Tech Stack & Tools
 * **Language:** Java
 * **Automation Tool:** Selenium WebDriver
 * **Test Framework:** TestNG
-* **Build Tool:** Maven
+* **Build Management:** Maven
 * **Design Pattern:** Page Object Model (POM)
 * **Version Control:** Git & GitHub
 
 ---
 
-## 🛠️ Project Structure
-
+## 📂 Project Structure
+```text
 SeleniumFrameworkDemo
-
 │
-
 ├── src
-
 │   ├── test
-
 │       ├── java
-
-│           ├── base          # Browser initialization and teardown (BaseClass)
-
-│           ├── pages         # Page Object classes (LoginPage, ProductsPage, etc.)
-
-│           └── tests         # Test case classes (LoginTest)
-
+│           ├── base          # Browser initialization, setup, and teardown (BaseClass)
+│           ├── pages         # Page Object classes containing WebElements and Actions (LoginPage, ProductsPage)
+│           └── tests         # Test case execution classes (LoginTest)
 │
-
-├── pom.xml                   # Maven dependencies and configurations
-
+├── pom.xml                   # Maven configuration and dependencies
 └── README.md
+```
+## 🧪 Test Scenarios Covered 
+
+* **Successful Login & Navigation:**
+
+Opens the SauceDemo application.
+
+Logs in using valid credentials (standard_user / secret_sauce).
+
+Verifies successful navigation to the inventory dashboard via URL assertion.
 
 
-🧪 Test Scenarios Covered
+* **Add to Cart Functionality:**
 
-Successful Login & Navigation: Verifies that a user can successfully log in with valid credentials and lands on the products inventory page.
+Selects a product and adds it to the cart.
 
-Add to Cart Functionality: Validates adding a product to the cart and confirms the navigation to the cart page.
+Clicks the cart icon and verifies that the item is successfully loaded in the cart page.
 
-⚙️ How to Run the Tests
+
+
+
+## ⚙️ How to Run the Tests
+
 Clone the repository:
 
 Bash
 git clone [https://github.com/prameesha-98/SeleniumFrameworkDemo.git](https://github.com/prameesha-98/SeleniumFrameworkDemo.git)
-Open the project in any Java IDE (Eclipse / IntelliJ IDEA) as a Maven Project.
 
-Run the tests:
+*Open the Project:
 
-You can run tests directly from the LoginTest.java file via TestNG, or execute them using Maven through the terminal:
+*Import the project into any Java IDE (Eclipse / IntelliJ IDEA) as an Existing Maven Project.
 
-Bash mvn clean test
+*Execute Tests:
+
+*You can run the tests directly from LoginTest.java using TestNG, or via the terminal using Maven: **Bash mvn clean test**
